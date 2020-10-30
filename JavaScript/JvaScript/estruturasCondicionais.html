@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estruturas Condicionais</title>
+    </head>
+
+    <script>
+        /* Estruturas condicionais
+        if(condição){
+        }else{
+        }
+
+        if(condição){
+        }else if(condição){
+        }else{
+        }*/
+
+        /* Operador ternário
+        <condição> ? <verdadeiro> : <falso> */
+        var resultado = (((2 == 2) && (2 === '2'))|| (3!=4)) ? document.write('verdadeiro<br>') :  document.write('falso<br>') 
+
+        /* Switch
+        switch (parametro){
+            case 1:
+                //se parametro === 1
+                //trecho de código que será executado
+                break
+            case 2:
+                //se parametro === 2
+                //trecho de código que será executado
+                break
+            case 3:
+                //se parametro === 3
+                //trecho de código que será executado
+                break
+            
+            ...
+
+            default:
+                //se parametro não encontrado                //trecho de código que será executado
+                break
+        } 
+
+
+        /* Operadores de comparação
+        Igual (==), Idêntico (===), Diferente (!=), Não idêntico (!==), Menor (<), Maior (>), Menor ou igual (<=), Maior ou igual (>=)*/
+
+        /* Operadores lógicos
+        E (&&), OU (||), Negação (!)*/
+
+        if(2 == '2'){
+            document.write('<h6>Entrou dentro do bloco if (2 == "2") - verdadeiro<h6>')
+        }
+        else{
+            document.write('<h6>Entrou dentro do bloco if (2 == "2") - falso<h6>')    
+        }
+        if(2 === '2'){
+            document.write('<h6>Entrou dentro do bloco if (2 === "2") - verdadeiro<h6>')
+        }else{
+            document.write('<h6>Entrou dentro do bloco if (2 === "2") - falso<h6>')    
+        }
+        if(2 !== '2'){
+            document.write('<h6>Entrou dentro do bloco if (2 !== "2") - verdadeiro<h6>')
+        }else{
+            document.write('<h6>Entrou dentro do bloco if (2 !== "2") - falso<h6>')    
+        }
+    </script>
+    <body>
+        
+    </body>
+</html>

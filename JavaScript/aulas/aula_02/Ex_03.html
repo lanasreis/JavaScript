@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Seu nome tem <strong>${nome.length}</strong> letras </br>`);
+        document.write(`Seu nome maiúsculo é ${nome.toUpperCase()} </br>`)
+        var n2 = 100
+        document.write(`O Número é ${n2.toFixed(3)} </br>`)
+        document.write(`O Salario é ${n2.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'})} </br>`)
+    </script>
+</body>
+</html>

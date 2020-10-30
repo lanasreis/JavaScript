@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio</title>
+        <style>
+            .foco{
+                background: yellow;
+            }
+            .menos3{
+                background: red;
+            }
+            .mais3{
+                background: green;
+            }
+        </style>
+        <script>
+            function foco(){
+                document.getElementById('teste').className = 'foco'
+            }
+            function perdeu(){
+                var valor = document.getElementById('teste').value
+                if(valor.length >= 3){
+                    document.getElementById('teste').className = 'menos3'
+                }
+                else
+                    document.getElementById('teste').className = 'mais3'
+            }
+        </script>
+    </head>
+    <body>
+        <input id="teste" class="" onfocus="foco()" onblur="perdeu()" type="text">
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funções</title>
+
+        <script>
+            /*function nome (parametros){
+                //logica
+                return resultado
+            }*/
+            
+            /* Exemplo 
+            document.write('<h2>Funções</h2>')
+            function calcularAreaTerreno(largura, comprimento){
+                var area = largura * comprimento
+                return area
+            }
+
+            var largura = prompt('Digite a largura:')
+            var comprimento = prompt('Digite o comprimento:')
+            
+            var a = calcularAreaTerreno(largura, comprimento)
+            
+            document.write(a + '<br>')
+            */
+
+            /* Funções  anônimas*/
+            document.write('<br><br><h3>Funções Anônimas</h3><br>')
+            var exibirSaudacao = function(nome){
+                document.write('Olá '+ nome + ', tudo bem?')
+            }
+            exibirSaudacao('Alana')
+
+
+
+            /* Funções  Callback*/
+            document.write('<br><br><h3>Funções Callback</h3>')
+            
+            function exibirArtigo(id, callbackSucesso, callbackErro){
+                //lógica: recuperar o id via reuisição http
+                if(false){
+                    callbackSucesso('Funções de callback em JS', 'Funções de callback são muitos requisitadas')
+                }else{
+                    callbackErro('Erro ao recuperar os dados')
+                }
+            }
+
+            var callbackSucesso = function(titulo, descricao){
+                document.write('<h4>'+ titulo +'</h4>')
+                document.write('<hr>')
+                document.write('<p>'+ descricao +'</p>')
+            }
+            var callbackErro = function(erro){
+               document.write('<p><b>Erro:</b>'+ erro +'</p>') 
+            }
+
+            exibirArtigo(1, callbackSucesso, callbackErro)
+
+
+            /* Funções  Callback*/
+            document.write('<br><br><h3>Funções Argumento</h3>')
+            
+            function soma(){
+                console.log(arguments)
+                var result = 0
+                for(var i in arguments){
+                    result += arguments[i]
+                }
+                return result
+            }
+            document.write('A soma é: '+soma(7, 5, 3.2, 'texto', 6, 4))
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

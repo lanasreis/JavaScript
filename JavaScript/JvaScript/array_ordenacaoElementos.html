@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Ordenação</title>
+        <script>
+            var lista_frutas = ['Maça', 'Uva', 'Banana', 'Morango']
+            console.log(lista_frutas)
+            console.log(lista_frutas.sort())
+
+            var lista_numeros = ['5', '7', 2, '3', 9, '40', 1, 12]
+            console.log(lista_numeros)
+            console.log(lista_numeros.sort())
+            console.log(lista_numeros.sort(ordenaNumeros))
+
+            function ordenaNumeros(a, b){
+                return a-b
+                // < 0--> a ordenado antes de b
+                // > 0--> b ordenado antes de a
+                // == a ordem é mantida
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Atividade</title>
+        <script>
+            var objetos = ['Cadeira', 'Impressora', 'Garfo']
+
+            function adiciona(){
+                var aux = document.getElementById('teste').value
+
+                if(aux == ''){
+                    alert('Informe um valor válido!')
+                }
+                else{
+                    if(objetos.indexOf(aux) !== -1){
+                        alert('Objeto já adicionado')
+                }
+                    else{
+                        objetos.push(aux)
+                        console.log(objetos)
+                    }
+                }
+                document.getElementById('teste').value = ''
+            }
+
+            function ordena(){
+                objetos.sort()
+                console.log(objetos)
+            }
+        </script>
+    </head>
+    <body>
+        <input id="teste" type="text">
+        <button onclick="adiciona()">Adicionar</button>
+        <button onclick="ordena()">Ordenar</button>
+    </body>
+</html>

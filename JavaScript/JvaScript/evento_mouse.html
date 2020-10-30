@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos</title>
+
+        <script>
+            function acao(){
+                alert('Evento Dsiparado')
+            }
+            function dois_clicks(){
+                alert('Dois clicks')
+            }
+            function pressionado(){
+                alert('Pressionado')
+            }
+            function sobre(){
+                alert('sobre')
+            }
+            function sai(){
+                alert('sai')
+            }
+        </script>
+        <style>
+            div{
+                background: red;
+                height: 150px;
+                width: 150px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 150px;
+                text-align: center;
+                font-weight: 700;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div onclick="acao()" style="">Clique</div>
+        <div ondblclick="dois_clicks()" >Dois cliques</div>
+        <div onmouseup="pressionado()" >Pressione</div>
+        <div onmouseover="sobre()" >Sobre</div>
+        <div onmouseout="sai()" >Saia</div>
+    </body>
+</html>

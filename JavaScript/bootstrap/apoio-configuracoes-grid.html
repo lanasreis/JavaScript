@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Configurações do grid</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+      .marcador{
+        background: #fe9d9d;
+        border: 1px solid #f94646;
+      }
+
+      
+      .marcador-container{
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container marcador-container">
+      
+      <h2>Largura fixa</h2>
+      <div class="row" style="border: 1px solid red">
+        <div class="col marcador">Área 1</div>
+        <div class="col marcador">Área 2</div>
+        <div class="col marcador">Área 3</div>
+        <div class="col marcador">Área 4</div>
+      </div>
+
+
+      <h2>Largura automática (auto-layout)</h2>
+      <div class="row">
+        <div class="col-4 marcador">Área 1</div>
+        <div class="col-6 marcador">Área 2</div>
+        <div class="col-1 marcador">Área 3</div>
+        <div class="col-1 marcador">Área 4</div>
+      </div>
+
+      <h2>Largura igual empilhada</h2>
+      <div class="row">
+        <div class="col-lg marcador">Área 1</div>
+        <div class="col-lg marcador">Área 2</div>
+        <div class="col-lg marcador">Área 3</div>
+        <div class="col-lg marcador">Área 4</div>
+      </div>
+
+
+      <h2>Ordenando</h2>
+      <div class="row">
+        <div class="col order-2 marcador">Área 1</div>
+        <div class="col order-3 marcador">Área 2</div>
+        <div class="col order-4 marcador">Área 3</div>
+        <div class="col order-1 marcador">Área 4</div>
+      </div>
+
+      <h2>offset</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 marcador">Login...</div>
+      </div>
+
+
+      <h2>offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <div class="col-md-3 offset-md-1 marcador">Conteúdo 1</div>
+        <div class="col-md-3 offset-md-6 marcador">Conteúdo 2</div>
+      </div>
+      
+      <h2>Aninhamento</h2>
+      <div class="row">
+        <div class="col-md-6" style="border: 1px solid blue;">
+          col-md-6
+          <div class="col-md-6 marcador">Conteúdo 1</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

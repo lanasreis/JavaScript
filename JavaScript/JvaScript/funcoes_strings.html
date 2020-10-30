@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funções Strings</title>
+
+        <script>
+            var nome = 'Jorge Sant Ana'
+
+            /* PROPRIEDADES */
+            document.write('<h2>Propriedades</h2>')
+            
+            // legth
+            document.write('<p><b>Length:</b> Retorna a quantidade de carcteres da string: ')
+            document.write(nome.length + '</p>')
+
+            document.write('<hr>')
+
+
+
+            /* MÉTODOS*/
+            document.write('<h2>Métodos</h2>')
+
+            // charAt
+            document.write('<p><b>CharAt:</b> Retorna qual caracter está na posição indicada(3): ')
+            document.write(nome.charAt(3) + '</p>')
+            
+            // indexOf
+            document.write('<p><b>IndexOf:</b> Retorna em qual posição há a primeira ocorrencia do caracter indicado(a): ')
+            document.write(nome.indexOf('a') + '</p>')
+
+            // replace
+            document.write('<p><b>Replace:</b> Permite a substituição de texto dentro de uma string (Sant Ana, Silva): ')
+            document.write(nome.replace('Sant Ana', 'Silva') + '</p>')
+            
+            // substr
+            document.write('<p><b>Substr:</b> Permite recuperar parte da string a partir da posição inicial e de quantos carcteres em sequência (6, 4): ')
+            document.write(nome.substr(6, 4) + '</p>')
+            
+            // toLowerCase
+            document.write('<p><b>ToLowerCase:</b> Os caracteres maiúsculos ficam minúsculos: ')
+            document.write(nome.toLocaleLowerCase() + '</p>')
+            
+            // toUpperCase
+            document.write('<p><b>ToUpperCase:</b> Os caracteres minúsculos ficam maiúsculos: ')
+            document.write(nome.toLocaleUpperCase() + '</p>')
+            
+            // trim
+            var nome_teste = '   Alana     '
+            document.write('<p><b>Trim:</b> Remove os espaços das estremidades da string: ')
+            document.write('-'+ nome_teste.trim() + '-</p>')
+            
+            document.write('<hr>')
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
